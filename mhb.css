@@ -10,7 +10,5 @@
          url("../Font/PoiretOne-Regular.ttf")   format("ttf");}
 @font-face {
             font-family: 'Open_Sans', sans-serif;
-    src: url("Font\Open_Sans\OpenSans-Light.ttf") format(ttf),
-        url("Font\Open_Sans\OpenSans-LightItalic.ttf") format(ttf),
-        url("Font\Open_Sans\OpenSans-SemiBoldItalic.ttf") format(ttf);
+    src: url("Font\Open_Sans\OpenSans-SemiBoldItalic.ttf") format(ttf);
 }

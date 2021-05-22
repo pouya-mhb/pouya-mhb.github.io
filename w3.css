@@ -249,7 +249,7 @@ span,p{font-weight: bold}
 .mb-0{margin-bottom: 0;}
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */

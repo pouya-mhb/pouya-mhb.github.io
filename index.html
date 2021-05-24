@@ -21,13 +21,19 @@
         font-family: "mulish";
     }
 </style>
-
-<body class="w3-text-grey">
+<body class="w3-text-grey" id="top">
+    <div class="w3-bar w3-blue-grey">
+            <a href=" #aboutMe"><button class="w3-bar-item w3-button">About me</button></a>
+        <a href="#education"><button class="w3-bar-item w3-button">Education</button></a>
+        <a href="#volunteer"><button class="w3-bar-item w3-button">Volunteer Experience</button></a>
+        <a href="#project"><button class="w3-bar-item w3-button">Project Experience</button></a>
+        <a href="#work"><button class="w3-bar-item w3-button">Work Experience</button></a>
+    </div>
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px; ">
 
         <!-- The Grid -->
-        <div class="w3-row-padding">
+        <div class="w3-row-padding" style="position: relative;">
 
             <!-- Left Column -->
             <div class="w3-third">
@@ -48,7 +54,7 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="w3-container">
+                    <div class="bio w3-container">
                         <p>
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
                                 fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;">
@@ -174,7 +180,7 @@
             <!-- Right Column -->
             <div class="w3-twothird">
                 <div
-                    class="w3-container w3-card-4 w3-content w3-margin-bottom w3-padding-16 mhb-bg-color mhb-font-color2">
+                    class="w3-container w3-card-4 w3-content w3-margin-bottom w3-padding-16 mhb-bg-color mhb-font-color2" id="aboutMe">
                     <h2>
                         <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px"
                             fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle; margin-bottom: 4px;">
@@ -197,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="w3-container w3-card-4 w3-white w3-padding-16">
+                <div class="w3-container w3-card-4 w3-white w3-padding-16" id="education">
                     <h2 class="w3-text-grey"><i
                             class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge mhb-body-fontColor"></i>
                         <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px"
@@ -225,7 +231,7 @@
                     </div>
                 </div>
 
-                <div class="w3-container w3-card-4 w3-white w3-padding-16 w3-margin-top">
+                <div class="w3-container w3-card-4 w3-white w3-padding-16 w3-margin-top" id="volunteer">
                     <h2 class="w3-text-grey"><i
                             class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge mhb-body-fontColor"></i>
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="30px"
@@ -257,7 +263,7 @@
                         <br>
                     </div>
                 </div>
-                <div class="w3-container w3-card-4 w3-white w3-margin-top">
+                <div class="w3-container w3-card-4 w3-white w3-margin-top"  id="project">
                     <h2 class="w3-text-grey w3-padding-16"><i
                             class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge mhb-body-fontColor mhbResponsive"></i>
                         <img src="Logo/body/black/1x/outline_laptop_black_24dp.png" alt="">
@@ -380,9 +386,9 @@
                     </div>
                 </div>
 
-<!--
 
-    <div class="w3-container w3-card-4 w3-white w3-margin-top">
+
+    <div class="w3-container w3-card-4 w3-white w3-margin-top" id="work">
         <h2 class="w3-text-grey w3-padding-16"><i
             class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge mhb-body-fontColor"></i>
             <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px"
@@ -426,7 +432,7 @@
                         <br>
                     </div>
                 </div>
-            -->
+          
                 
                 <!-- End Right Column -->
             </div>
@@ -437,7 +443,9 @@
         <!-- End Page Container -->
     </div>
     <footer class="w3-container w3-center w3-margin-top mhb-footer-color mhb-font-color">
-        <a href="index.html" class="w3-button w3-light-grey w3-center w3-margin-top badge">To the top</a>
+        <a href="#top" class="top-link w3-button w3-light-grey w3-center w3-margin-top badge go-top" id="go-top">
+            <span class="screen-reader-text">To the top</span>
+        </a>
         <p>Find me on social media</p>
         <a href="https://github.com/pouya-mhb" title="GitHub">
             <img class="mhb-footer-icon" src="Logo\gh.png"></a>
@@ -448,6 +456,20 @@
         <a href="https://twitter.com/TheGreatMhb" title="Twitter">
             <img class="mhb-footer-icon" src="Logo/twt.png"></a>
     </footer>
+    <script>
+        let btn = document.getElementById("go-top");
+        btn.style.visibility = "hidden";
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.visibility = "visible";
+            } else {
+                btn.style.visibility = "hidden";
+            }
+        }
+    </script>
 </body>
 
 </html>

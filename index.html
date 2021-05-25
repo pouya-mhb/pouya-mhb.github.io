@@ -23,11 +23,11 @@
 </style>
 
 <body class="w3-text-grey " id="top">
-    <div class="w3-bar w3-blue-grey">
-        <a href=" #aboutMe"><button class="w3-bar-item w3-button">About me</button></a>
-        <a href="#education"><button class="w3-bar-item w3-button">Education</button></a>
-        <a href="#volunteer"><button class="w3-bar-item w3-button">Volunteer Experience</button></a>
-        <a href="#project"><button class="w3-bar-item w3-button">Project Experience</button></a>
+    <div id="topnavbar" class="mhb-body-fontColor mhb-footer-color nav_responsive_text">
+        <a href="#aboutMe"><button class="   w3-bar-item w3-button">About me</button></a>
+        <a href="#education"><button class=" w3-bar-item w3-button">Education</button></a>
+        <a href="#volunteer"><button class=" w3-bar-item w3-button">Volunteer Experience</button></a>
+        <a href="#project"><button class="   w3-bar-item w3-button">Project Experience</button></a>
         <!-- <a href="#work"><button class="w3-bar-item w3-button">Work Experience</button></a> -->
     </div>
     <!-- Page Container -->
@@ -421,9 +421,8 @@
                     </div>
                 </div>
 
-                <div class="w3-container w3-card-4 w3-white w3-padding-16 w3-margin-top" id="volunteer">
-                    <h2 class="w3-text-grey"><i
-                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge mhb-body-fontColor"></i>
+                <div class="w3-container w3-card-4 w3-white w3-padding-16 w3-margin-top V_exp" id="volunteer">
+                    <h2 class="w3-text-grey V_exp">
                         <img src="Logo/body/black/volunteer_activism_black_24dp.svg" alt="" height="28px"
                             viewBox="0 0 24 24" width="28px" fill="rgba(53, 46, 46, 0.9)"
                             style="vertical-align: middle;  margin-bottom: 4px;">
@@ -431,8 +430,7 @@
                     </h2>
                     <div class="w3-container" style="padding-bottom: 16px;">
                         <h5 class="w3-opacity mb-0"><b> Public Relations Director</b></h5>
-                        <h6 class="mhb-font-color2 mt-0">
-                            IAUCTB's Association of Computer Engineering</h6>
+                        <h6 class="mhb-font-color2 mt-0">IAUCTB's Association of Computer Engineering</h6>
                         <span class="badge mhb-body-fontColor">Dec 2016 – Oct 2018</span>
                         <br>
                         <hr>
@@ -609,15 +607,6 @@
         let btn = document.getElementById("go-top");
         btn.style.visibility = "hidden";
         window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                btn.style.visibility = "visible";
-            } else {
-                btn.style.visibility = "hidden";
-            }
-        }
     </script>
 </body>
 

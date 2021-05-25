@@ -234,7 +234,7 @@ span,p{font-weight: bold}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
-
+/*------------------------------------------------------------------------------------------------------*/
 .mhb-footer-icon{width: 50px; height: 50px; margin: 0 5px 15px;}
 .mhb-bg-color {background-color:rgb(224, 223, 223)!important}
 .mhb-color{background-color:rgb(28, 125, 189)!important}
@@ -303,7 +303,7 @@ span,p{font-weight: bold}
   position: fixed;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 400px){
   .bio{
     font-size: 14px;
   }
@@ -328,11 +328,21 @@ span,p{font-weight: bold}
   .badge{
     font-size: 15px;
   }
+  .V_exp{
+    font-size: 10;
+  }
   .w3-bar{
     display: none;
+  } 
+  .nav_responsive_text{
+    font-size: 5px;
   }
 }
 
-#cirle_acc{
-  fill:#616161
+.mhbTopNAV {
+  padding-top: 5px;
+  padding-left: 5px;
+  text-align: left;
+  font-size: medium;
+  
 }

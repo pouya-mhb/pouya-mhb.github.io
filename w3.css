@@ -297,10 +297,10 @@ span,p{font-weight: bold}
   color: rgb(202, 201, 201); 
   bottom: 10px ; 
   right: 10px ;
-  font-size: 13px; 
-  background-color: rgb(28, 125, 189);
+  font-size: 15px; 
+  background-color: rgb(99, 114, 124);
   transition: all 0.3s ease-in-out;
-  
+  position: fixed;
 }
 
 @media only screen and (max-width: 768px){

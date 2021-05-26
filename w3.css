@@ -1,5 +1,5 @@
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
-html{box-sizing:border-box; scroll-behavior: smooth;}*,*:before,*:after{box-sizing:inherit}
+html{box-sizing:border-box; scroll-behavior:smooth;}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
@@ -25,7 +25,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
 html,body{font-family:'mulish';font-size:15px;line-height:1.5; font-weight: bold}html{overflow-x:hidden}
-h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+h1{font-size:36px}h2{font-size:25px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:'mulish'}.w3-sans-serif{font-family:'mulish'}.w3-cursive{font-family:'mulish'}.w3-monospace{font-family:'mulish'}
 h1,h2,h3,h4,h5,h6{font-family:'mulish';font-weight: bold;margin:10px 0}.w3-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
@@ -247,7 +247,9 @@ span,p{font-weight: bold}
 .m-0{margin: 0;}
 .mt-0{margin-top: 0;}
 .mb-0{margin-bottom: 0;}
-
+.V_exp{
+    font-size: 10;
+  }
 
 /* width */
 ::-webkit-scrollbar {
@@ -262,13 +264,13 @@ span,p{font-weight: bold}
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(102, 101, 101);
+  background:rgb(129, 129, 129);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: rgb(182, 190, 196);
 }
 
 @font-face {
@@ -298,20 +300,75 @@ span,p{font-weight: bold}
   bottom: 10px ; 
   right: 10px ;
   font-size: 15px; 
-  background-color: rgb(99, 114, 124);
+  background-color: rgb(28, 125, 189);
   transition: all 0.3s ease-in-out;
   position: fixed;
 }
 
-@media only screen and (max-width: 400px){
+.navbar{
+  margin:0%;
+  padding:0%;
+  box-sizing: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(28, 125, 189);
+}
+
+.mhbNav {
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;  
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
+.navLinks{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.navLinks li{
+  list-style: none;
+}
+
+.navLinks a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.burger{
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background-color: #ffffff;
+}
+
+/*iphone 5s*/
+@media only screen and (max-width: 320px){
   .bio{
     font-size: 14px;
   }
   .skills p, .lang p{
     font-size: 13px;
   }
+  h1{font-size: 28px;
+
+  }
   h2{
     font-size: 25px;
+  }
+  h3{
+    font-size: 23px;
+  }
+  h4{
+    font-size: 20px;
   }
   h5{
     font-size: 17px;
@@ -322,8 +379,8 @@ span,p{font-weight: bold}
   .responsive-text{
     font-size: 14px;
   }
-  .mhb-font-color2{
-    font-size: 14px;
+  .mhb-font-2 {
+    font-size: 19px;
   }
   .badge{
     font-size: 15px;
@@ -334,14 +391,150 @@ span,p{font-weight: bold}
   .w3-bar{
     display: none;
   } 
-  .nav_responsive_text{
+  .nav_responsive{
     font-size: 10px;
+    display: block;
+  }
+
+  .navLinks{
+    display: none;
+  }
+  .burger{
+    display:block;
   }
 }
-.mhbTopNAV {
-  padding-top: 5px;
-  padding-left: 5px;
-  text-align: left;
-  font-size: medium;
-  
+
+/*iphone 6*/
+@media only screen and (max-width: 376px){
+  .bio{
+    font-size: 14px;
+  }
+  .skills p, .lang p{
+    font-size: 13px;
+  }
+  h1{font-size: 28px;
+
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 23px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 17px;
+  }
+  h6{
+    font-size: 14px;
+  }
+  .responsive-text{
+    font-size: 14px;
+  }
+  .mhb-font-2 {
+    font-size: 19px;
+  }
+  .badge{
+    font-size: 15px;
+  }
+  .V_exp{
+    font-size: 10;
+  }
+  .w3-bar{
+    display: none;
+  } 
+  .nav_responsive{
+    font-size: 10px;
+    display: block;
+  }
+  .mhbNav{
+    
+  }
+  .navLinks{
+    display: none;
+  }
+  .burger{
+    display:block;
+  }
+  body{
+    overflow-x: none;
+  }
+}
+
+/*iphone 6 plus*/
+@media only screen and (max-width: 415px){
+  .bio{
+    font-size: 14px;
+  }
+  .skills p, .lang p{
+    font-size: 13px;
+  }
+  h1{font-size: 28px;
+
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 23px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 17px;
+  }
+  h6{
+    font-size: 14px;
+  }
+  .responsive-text{
+    font-size: 14px;
+  }
+  .mhb-font-2 {
+    font-size: 19px;
+  }
+  .badge{
+    font-size: 15px;
+  }
+  .V_exp{
+    font-size: 10;
+  }
+  .w3-bar{
+    display: none;
+  } 
+  .nav_responsive{
+    font-size: 10px;
+    display: block;
+  }
+  .mhbNav{
+    
+  }
+  .navLinks{
+    display: none;
+  }
+  .burger{
+    display:block;
+  }
+  body{
+    overflow-x: none;
+  }
+}
+
+/*ipad*/
+@media only screen and (max-width: 768px){
+  body{
+    overflow-x: none;
+  }
+  .navLinks{
+
+  }  
+}
+/*ipad pro*/
+@media only screen and (max-width: 1024px){
+  .navLinks{
+    width: 60%;;
+  }
+
 }

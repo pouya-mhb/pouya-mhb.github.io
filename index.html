@@ -1,38 +1,83 @@
 <!DOCTYPE html>
 <html>
-<title>TheGreatMHB CV</title>
+<title>MHB CV</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
 
+<head>
+    <script src="jquery.1.9.1.min.js"></script>
+    <link rel="stylesheet" href="w3.css">
 
-<style>
-    html,
-    body {
-        font-family: "mulish";
-    }
+    <style>
+        html,
+        body {
+            font-family: "mulish";
+        }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "mulish";
-    }
-</style>
+        h1,
+        h4,
+        h5,
+        h6 {
+            font-family: "mulish";
+        }
 
-<body class="w3-text-grey " id="top">
-    <div id="topnavbar" class="mhb-body-fontColor mhb-footer-color nav_responsive_text">
+        h2,
+        h3 {
+            font-family: "poiretOne";
+        }
+
+        mhbNav {
+            font-family: "poiretOne";
+        }
+
+        navLinks {
+            font-family: "mulish";
+        }
+    </style>
+</head>
+
+<body class="w3-text-grey" id="top">
+    <!--
+    <div id="mySidenav" class="sidenav mhb-body-fontColor mhb-footer-color nav_responsive_text">
         <a href="#aboutMe"><button class="   w3-bar-item w3-button">About me</button></a>
         <a href="#education"><button class=" w3-bar-item w3-button">Education</button></a>
         <a href="#volunteer"><button class=" w3-bar-item w3-button">Volunteer Experience</button></a>
         <a href="#project"><button class="   w3-bar-item w3-button">Project Experience</button></a>
-        <!-- <a href="#work"><button class="w3-bar-item w3-button">Work Experience</button></a> -->
-    </div>
+             <a href="#work"><button class="w3-bar-item w3-button">Work Experience</button></a> 
+            </div>
+        -->
+    <nav id="MHBnavbar" class="navbar">
+        <div class="mhbNav">
+            <h2>
+                TheGreatMHB
+            </h2>
+        </div>
+        <ul class="navLinks">
+            <li>
+                <a href="#aboutMe">About Me</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#volunteer">Volunteer Experience</a>
+            </li>
+            <li>
+                <a href="#project">Project Experience</a>
+            </li>
+            <li>
+                <a href="#work">Work Experience</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px; ">
-
         <!-- The Grid -->
         <div class="w3-row-padding" style="position: relative;">
 
@@ -41,7 +86,7 @@
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
                         <img src="IMG_5555.JPG" style="width:100%" alt="">
-                        <div class="w3-display-container w3-container  mhb-font-color2">
+                        <div class="w3-display-container w3-container mhb-font-2">
                             <h3>
                                 <img src="Logo/body/black/account_circle_black_24dp.svg" alt=""
                                     style="height: 35px; width: 35px;">
@@ -145,7 +190,7 @@
                         <p>HTML + CSS</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
                             <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
-                                style="width:50%">50%</div>
+                                style="width:70%">70%</div>
                         </div>
                         <p>JavaScript</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -358,7 +403,7 @@
             <!-- Right Column -->
             <div class="w3-twothird">
                 <div id="aboutMe"
-                    class="w3-container w3-card-4 w3-content w3-margin-bottom w3-padding-16 mhb-bg-color mhb-font-color2">
+                    class="w3-container w3-card-4 w3-content w3-margin-bottom w3-padding-16 mhb-bg-color mhb-font-2">
                     <h2>
                         <img src="Logo/body/black/info_black_24dp.svg" alt="" height="28px" viewBox="0 0 24 24"
                             width="28px" fill="rgba(53, 46, 46, 0.9)"
@@ -421,8 +466,8 @@
                     </div>
                 </div>
 
-                <div class="w3-container w3-card-4 w3-white w3-padding-16 w3-margin-top V_exp" id="volunteer">
-                    <h2 class="w3-text-grey V_exp">
+                <div class="w3-container w3-card-4 w3-white w3-padding-16 w3-margin-top" id="volunteer">
+                    <h2 class="w3-display-container w3-container mhb-font-2 w3-text-grey">
                         <img src="Logo/body/black/volunteer_activism_black_24dp.svg" alt="" height="28px"
                             viewBox="0 0 24 24" width="28px" fill="rgba(53, 46, 46, 0.9)"
                             style="vertical-align: middle;  margin-bottom: 4px;">
@@ -430,14 +475,14 @@
                     </h2>
                     <div class="w3-container" style="padding-bottom: 16px;">
                         <h5 class="w3-opacity mb-0"><b> Public Relations Director</b></h5>
-                        <h6 class="mhb-font-color2 mt-0">IAUCTB's Association of Computer Engineering</h6>
+                        <h6 class="mhb-font-2 w3-text-grey">IAUCTB's Association of Computer Engineering</h6>
                         <span class="badge mhb-body-fontColor">Dec 2016 – Oct 2018</span>
                         <br>
                         <hr>
                     </div>
                 </div>
-                <div class="w3-container w3-card-4 w3-white w3-margin-top" id="project">
-                    <h2 class="w3-text-grey w3-padding-16"><i
+                <div class="w3-container w3-card-4 w3-white w3-margin-top w3-padding-16" id="project">
+                    <h2 class="mhb-font-2 w3-text-grey"><i
                             class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge mhb-body-fontColor mhbResponsive"></i>
                         <img src="Logo/body/black/precision_manufacturing_black_24dp.svg" alt="">
                         Project Experience
@@ -450,8 +495,8 @@
                         </h5>
                         <ul class="mhb-font-color2 mt-0">
                             <li>
-                                <a
-                                    href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Compiler%20Class/prefix%20suffix%20substring%20proper%20prefix%20subsequence">
+                                <a href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Compiler%20Class/prefix%20suffix%20substring%20proper%20prefix%20subsequence"
+                                    class="mhb-font-2 w3-text-grey">
                                     Compiler Class Projects</a>
                                 <span class="badge mhb-body-fontColor">2020</span>
                             </li>
@@ -466,7 +511,7 @@
                         </h5>
                         <ul class="mhb-font-color2 mt-0">
                             <li>
-                                <a
+                                <a class="mhb-font-2 w3-text-grey"
                                     href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Matlab%20Course%20Excercises">
                                     Micro Processor Lab Projects</a>
                                 <span class="badge mhb-body-fontColor">2020</span>
@@ -482,7 +527,7 @@
                         </h5>
                         <ul class="mhb-font-color2 mt-0">
                             <li>
-                                <a
+                                <a class="mhb-font-2 w3-text-grey"
                                     href=">https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Triangle%20Project">
                                     Login Form Project</a>
                                 <span class="badge mhb-body-fontColor">2019</span>
@@ -498,19 +543,20 @@
                         </h5>
                         <ul class="mhb-font-color2 mt-0">
                             <li>
-                                <a href="https://github.com/pouya-mhb/My-Ping-app">
+                                <a class="mhb-font-2 w3-text-grey" href="https://github.com/pouya-mhb/My-Ping-app">
                                     Ping Project</a>
                                 <span class="badge mhb-body-fontColor">2017</span>
                             </li>
                             <br>
                             <li>
-                                <a href="https://github.com/pouya-mhb/My-Data-Structure-Project">
+                                <a class="mhb-font-2 w3-text-grey"
+                                    href="https://github.com/pouya-mhb/My-Data-Structure-Project">
                                     Data Structure Project</a>
                                 <span class="badge mhb-body-fontColor">2017</span>
                             </li>
                             <br>
                             <li>
-                                <a
+                                <a class="mhb-font-2 w3-text-grey"
                                     href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Phone%20book">
                                     Phone Book Project</a>
                                 <span class="badge mhb-body-fontColor">2016</span>
@@ -526,7 +572,7 @@
                         </h5>
                         <ul class="mhb-font-color2 mt-0">
                             <li>
-                                <a
+                                <a class="mhb-font-2 w3-text-grey"
                                     href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Matlab%20Course%20Excercises">
                                     Matlab Course Excercises</a>
                                 <span class="badge mhb-body-fontColor">2020</span>
@@ -542,7 +588,7 @@
                         </h5>
                         <ul class="mhb-font-color2 mt-0">
                             <li>
-                                <a
+                                <a class="mhb-font-2 w3-text-grey"
                                     href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/SQL%20Server%20Course%20Excercises">
                                     SQL Server Excercises</a>
                                 <span class="badge mhb-body-fontColor">2019</span>
@@ -554,7 +600,7 @@
                         <h5 class="w3-opacity mb-0"><b>Assembly Projects</b></h5>
                         <ul class="mhb-font-color2 mt-0">
                             <li>
-                                <a
+                                <a class="mhb-font-2 w3-text-grey"
                                     href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Computer%20Arcitecture%20Project">
                                     Computer Arcitecture Project</a>
                                 <span class="badge mhb-body-fontColor">2018</span>
@@ -566,7 +612,7 @@
                         <h5 class="w3-opacity mb-0"><b>Simulation Projects</b></h5>
                         <ul class="mhb-font-color2 mt-0">
                             <li>
-                                <a href="https://github.com/pouya-mhb/ProteusProjects">
+                                <a class="mhb-font-2 w3-text-grey" href="https://github.com/pouya-mhb/ProteusProjects">
                                     Proteus Projects</a>
                                 <span class="badge mhb-body-fontColor">2020</span>
                             </li>
@@ -583,6 +629,8 @@
 
         <!-- End Page Container -->
     </div>
+
+    <!-- footer -->
     <footer class="w3-container w3-center w3-margin-top mhb-footer-color mhb-font-color">
         <a href="#top" class="top-link w3-button w3-center w3-margin-top badge go-top" style="margin-right: 2%;"
             id="go-top">
@@ -604,18 +652,42 @@
             <img class="mhb-footer-icon" src="Logo/tg.png"></a>
     </footer>
     <script>
-            let btn = document.getElementById("go-top");
+        let btn = document.getElementById("go-top");
+        btn.style.visibility = "hidden";
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.visibility = "visible";
+            } else {
                 btn.style.visibility = "hidden";
-                window.onscroll = function () { scrollFunction() };
+            }
+        }
+        function openNav() {
+            $('#mySidenav').css({ "width": "250px" });
+            $('#main').css({ "margin-left": "250px" });
+            // document.getElementById("mySidenav").style.width = "250px";
+            // document.getElementById("main").style.marginLeft = "250px";
+            // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
 
-                function scrollFunction() {
+        function closeNav() {
 
-                    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                        btn.style.visibility = "visible";
-                    } else {
-                        btn.style.visibility = "hidden";
-                    }
-                }
+            $('#mySidenav').css({ "width": "0" });
+            $('#main').css({ "margin-left": "0" });
+            // document.getElementById("mySidenav").style.width = "0";
+            // document.getElementById("main").style.marginLeft= "0";
+            // document.body.style.backgroundColor = "white";
+        }
+
+        $("#mySidenav").click(function () {
+            openNav();
+        });
+
+        $("#closebtn").click(function () {
+            closeNav();
+        });
     </script>
 </body>
 

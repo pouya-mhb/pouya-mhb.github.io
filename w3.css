@@ -335,10 +335,9 @@ span,p{font-weight: bold}
     display: none;
   } 
   .nav_responsive_text{
-    font-size: 5px;
+    font-size: 10px;
   }
 }
-
 .mhbTopNAV {
   padding-top: 5px;
   padding-left: 5px;

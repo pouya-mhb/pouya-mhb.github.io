@@ -604,9 +604,18 @@
             <img class="mhb-footer-icon" src="Logo/tg.png"></a>
     </footer>
     <script>
-        let btn = document.getElementById("go-top");
-        btn.style.visibility = "hidden";
-        window.onscroll = function () { scrollFunction() };
+            let btn = document.getElementById("go-top");
+                btn.style.visibility = "hidden";
+                window.onscroll = function () { scrollFunction() };
+
+                function scrollFunction() {
+
+                    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                        btn.style.visibility = "visible";
+                    } else {
+                        btn.style.visibility = "hidden";
+                    }
+                }
     </script>
 </body>
 

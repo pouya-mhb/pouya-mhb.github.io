@@ -7,6 +7,7 @@
 <head>
     <script src="jquery.1.9.1.min.js"></script>
     <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="NavCSS.css">
 
     <style>
         html,
@@ -69,7 +70,7 @@
                 <a href="#work">Work Experience</a>
             </li>
         </ul>
-        <div class="burger">
+        <div class="burger" href="javascript:void(0)" onclick="navSlide()">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -629,16 +630,16 @@
 
         <!-- End Page Container -->
     </div>
-
+<div>
+    <a href="#top" class="top-link w3-button w3-center w3-margin-top badge go-top" style="margin-right: 2%;" id="go-top">
+        <span class="screen-reader-text">
+            <img src="Logo/body/black/keyboard_arrow_up_white_24dp.svg" alt="" height="28px" viewBox="0 0 24 24"
+                width="28px" fill="rgba(53, 46, 46, 0.9)" style= "float: left; vertical-align: middle;  margin-bottom: 4px;">
+        </span>
+    </a>
+</div>
     <!-- footer -->
     <footer class="w3-container w3-center w3-margin-top mhb-footer-color mhb-font-color">
-        <a href="#top" class="top-link w3-button w3-center w3-margin-top badge go-top" style="margin-right: 2%;"
-            id="go-top">
-            <span class="screen-reader-text">
-                <img src="Logo/body/black/keyboard_arrow_up_white_24dp.svg" alt="" height="28px" viewBox="0 0 24 24"
-                    width="28px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;  margin-bottom: 4px;">
-            </span>
-        </a>
         <p>Find me on social media</p>
         <a href="https://github.com/pouya-mhb" title="GitHub">
             <img class="mhb-footer-icon" src="Logo\gh.png"></a>
@@ -651,6 +652,7 @@
         <a href="https://t.me/TheGreatMHB" title="Telegram">
             <img class="mhb-footer-icon" src="Logo/tg.png"></a>
     </footer>
+
     <script>
         let btn = document.getElementById("go-top");
         btn.style.visibility = "hidden";
@@ -664,30 +666,25 @@
                 btn.style.visibility = "hidden";
             }
         }
-        function openNav() {
-            $('#mySidenav').css({ "width": "250px" });
-            $('#main').css({ "margin-left": "250px" });
-            // document.getElementById("mySidenav").style.width = "250px";
-            // document.getElementById("main").style.marginLeft = "250px";
-            // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+       
+        const  navSlide =() => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.navLinks');
+            const navLinks = document.querySelectorAll('.navLinks li');
+            burger.addEventListener(onclick,() => {
+                // Toggle Nav
+                nav.classList.toggle('.navActive')
+                //animated links
+                navLinks.forEach((link,index)=>{
+                    link.style.animation = 'NavLinkFade 0.5s ease forwards ${index/7+1.5}s';
+                    console.log(index/7+0.2);
+                });
+                //burger animation
+                burger.classlist.toggle('toggle');
+                
+            });
         }
-
-        function closeNav() {
-
-            $('#mySidenav').css({ "width": "0" });
-            $('#main').css({ "margin-left": "0" });
-            // document.getElementById("mySidenav").style.width = "0";
-            // document.getElementById("main").style.marginLeft= "0";
-            // document.body.style.backgroundColor = "white";
-        }
-
-        $("#mySidenav").click(function () {
-            openNav();
-        });
-
-        $("#closebtn").click(function () {
-            closeNav();
-        });
+        navSlide();
     </script>
 </body>
 
